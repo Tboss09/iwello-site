@@ -31,7 +31,7 @@ const Feature = ({ text, icon, iconBg }) => {
 export default function SplitWithImage() {
  return (
   <Container maxW={'7xl'} py={8}>
-   <SimpleGrid columns={{ base: 1, md: 2 }} spacing={12} alignItems = 'flex-start'>
+   <SimpleGrid columns={{ base: 1, md: 2 }} spacing={24} alignItems = 'flex-start'>
      
     <Box >
     <Stack spacing={7}>
@@ -48,7 +48,7 @@ export default function SplitWithImage() {
      >
       Our Story
      </Text>
-     <Heading color = 'gray.700' fontWeight ='bold' >A Online Healthcare Service</Heading>
+     <Heading color = 'gray.600' fontWeight ='semibold' >A Online Healthcare Service</Heading>
      <Text color={'gray.500'} fontSize={'lg'}>
       Inspired by personal stories of the many who the health delivery system in
       Africa has failed. <Box as="span" color="blue.400" fontWeight="medium">
@@ -59,15 +59,7 @@ export default function SplitWithImage() {
       devastating trend caused by the poor health care delivery system in this
       part of the world.
      </Text>
-     <Text color={'gray.500'} fontSize={'lg'}>
-     <Box as="span" color="blue.400" fontWeight="medium">
-       {' '}
-       iWello.org
-      </Box>{' '}
-       is a project that is here to make a statement that everyone has
-      a chance of getting access to a healthy life regardless of income class;
-      whether living below $1 or managing with $10 a day.
-     </Text>
+    
      </Stack>
    
     </Box>
@@ -86,7 +78,7 @@ export default function SplitWithImage() {
      >
       Our Solution
      </Text>
-     <Heading>A Online Healthcare Service</Heading>
+     <Heading color = 'gray.600' fontWeight ='semibold'>A Online Healthcare Service</Heading>
      <Text color={'gray.500'} fontSize={'lg'}>
      
      <Box as="span" color="blue.400" fontWeight="medium">

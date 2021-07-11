@@ -16,7 +16,6 @@ export default function Wfl() {
       <Flex>
         <Icon
           boxSize={5}
-          mt={1}
           mr={2}
           color={useColorModeValue("brand.500", "brand.300")}
           viewBox="0 0 20 20"
@@ -46,8 +45,6 @@ export default function Wfl() {
       alignItems="center"
     >
       <Box
-        shadow="xl"
-        bg={useColorModeValue("white", "gray.800")}
         px={8}
         py={20}
         mx="auto"
@@ -68,7 +65,7 @@ export default function Wfl() {
               lineHeight="shorter"
               letterSpacing="tight"
             >
-              Become a Partner
+              REASONS FOR iWELLO
             </chakra.h2>
             <chakra.p
               mb={6}
@@ -76,15 +73,14 @@ export default function Wfl() {
               textAlign={{ base: "center", sm: "left" }}
               color={useColorModeValue("gray.600", "gray.500")}
             >
-              Let's put our heads together to build a successful partnership to
-              benefit both your customers and your business.
+           iWello was created for the following reasons:
             </chakra.p>
             <Button
               as="a"
               
               variant="solid"
               w={{ base: "full", sm: "auto" }}
-              colorScheme="brand"
+              colorScheme="teal"
               size="lg"
             >
               Become a Partner
@@ -96,16 +92,11 @@ export default function Wfl() {
             spacing={5}
             alignItems="start"
           >
-            <Feature>Email APIs, SMTP Relay, and Webhooks</Feature>
-            <Feature>Suppression Management</Feature>
-            <Feature>Email Tracking and Analytics</Feature>
-            <Feature>99.99% Guaranteed Uptime SLA</Feature>
-            <Feature>5 Days of Log Retention</Feature>
-            <Feature>Limited 24/7 Ticket Support</Feature>
-            <Feature>1 Dedicated IP (Foundation 100k and up)</Feature>
-            <Feature>1,000 Email Address Validations</Feature>
-            <Feature>Host events together or get your event sponsored</Feature>
-            <Feature>Reach 90,000 customers via our integration page</Feature>
+            <Feature>To provide healthcare solutions to low income earners who can’t afford the medical expenses.</Feature>
+            <Feature>The need to provide subsidized payments for medical consultation and treatment.</Feature>
+            <Feature> The need to see Nigeria as a healthy society with lesser cases of deaths due to lack of healthcare.</Feature>
+            <Feature>Increase the welfare of doctors by providing more opportunities for them to do their jobs.</Feature>
+            <Feature>To reduce the migration of able bodied doctors from the country.</Feature>
           </VStack>
         </SimpleGrid>
       </Box>

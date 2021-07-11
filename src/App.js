@@ -8,6 +8,7 @@ const App = () => {
 
    <Introduction />
    <Story/>
+   <Reason/>x
   </>
  )
 }
