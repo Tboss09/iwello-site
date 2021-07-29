@@ -9,16 +9,22 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@fontsource/open-sans": "^4.5.0",
+    "@n8tb1t/use-scroll-position": "^2.0.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "debounce": "^1.2.1",
     "framer-motion": "^4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hide-on-scroll": "^1.1.4",
     "react-icons": "^4.2.0",
+    "react-responsive-carousel": "^3.2.19",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "react-sticky-el": "^2.0.9",
+    "web-vitals": "^1.0.1",
+    "zustand": "^3.5.7"
   },
   "scripts": {
     "start": "react-scripts start",

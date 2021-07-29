@@ -1,14 +1,25 @@
-import React from 'react'
-import WithSubnavigation from './components/NavBar'
-import { Introduction ,Story,Reason} from './Pages/index'
+import React, { useRef, useEffect } from 'react'
+import {
+ Convince,
+ Features,
+ Footer,
+ Home,
+ NavBar,
+ Testimonial,
+ HideBetween,
+} from './pages/index'
 const App = () => {
  return (
   <>
-   <WithSubnavigation />
+   <HideBetween siv  startDivID="home"  endDivID="feature">
+    <NavBar />
+   </HideBetween>
 
-   <Introduction />
-   <Story/>
-   <Reason/>x
+   <Home />
+   <Features />
+   <Testimonial />
+   <Convince />
+   <Footer />
   </>
  )
 }

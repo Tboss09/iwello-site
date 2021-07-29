@@ -13,6 +13,7 @@ iWello is a medical tech company with an agenda to provide healthcare services t
 
 REASONS FOR iWELLO
 iWello was created for the following reasons:
+
 - To provide healthcare solutions to low income earners who can’t afford the medical expenses.
 - The need to provide subsidized payments for medical consultation and treatment.
 -  The need to see Nigeria as a healthy society with lesser cases of deaths due to lack of healthcare.
@@ -26,6 +27,9 @@ Features Iwello offers/Services
 Below the  $1 Consultation: Getting care from a licensed medical doctor is a big step. iWello helps you get there faster than ever before with our pay as you go below the $1 consultation fee. No more struggling to find the right medical advice when you need it. iWello provides a secure online network of doctors across the country which eases the significant cost barriers that patients now face when seeking care at specialists' offices. As a result, patients are able to get care at less expensive places with better outcomes  than 70% of  companies that offer the same.
 
 Affordable checkup and treatments: Worried about your health or family but scared of the bill? iWello is here for you to provide affordable checkup and treatment for non-emergency illnesses. It's not too late to get a checkup and treatment for a healthier life and you can be rest assured we've got your back all the way.
+
+
+
 Emergency Surgery Funding: At iWello, we understand that sometimes life happens and unexpected medical situations might happen that threaten to overwhelm you and your purse. At iWello, we perfectly understand and no matter the income class, we can assure you of getting your medical emergency surgery funded so you can get your life back!
 
 Fake Drug Checker: We are more than consultation and treatment at iWello. At iWello, we make sure to help you know if the drugs you and your loved ones are taking are safe almost instantly with the iWello Free Fake drug checker.
