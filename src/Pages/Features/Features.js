@@ -20,7 +20,7 @@ const Feature = ({ title, text, icon, link }) => {
    <Flex
     w={16}
     h={16}
-    id ='feature'
+    id="feature"
     align={'center'}
     justify={'center'}
     color={'white'}
@@ -69,7 +69,7 @@ export default function SimpleThreeColumns() {
      Our services
     </Text>
    </Box>
-   <SimpleGrid columns={{ base: 1, md: 3 }} spacing={12} mx="auto">
+   <SimpleGrid columns={[1, null, 2, 3]} spacing={12} mx="auto">
     <Box
      py="8"
      px="8"

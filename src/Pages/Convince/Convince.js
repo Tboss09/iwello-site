@@ -4,11 +4,11 @@ import React from 'react'
 
 const Convince = () => {
  return (
-  <VStack spacing={7} mt={32} textAlign="left" bg="brand.90" p={8}>
-   <VStack spacing={3}>
+  <VStack spacing={7} mt={32} textAlign="left" bg="brand.90" p={8} alignItems = {{md:'flex-start',lg:'initial'}}>
+   <VStack spacing={3} alignItems = {{md:'flex-start',lg:'initial'}}> 
     <Text
      fontSize="xl"
-     color="white"
+     color="gray.300"
      fontWeight="medium"
      textTransform=" uppercase"
     >
@@ -17,6 +17,7 @@ const Convince = () => {
     <Text
      fontSize="4xl"
      color="#9959ff"
+     w ={{md:"60%"}}
      fontWeight=" bold"
      textTransform=" uppercase"
     >

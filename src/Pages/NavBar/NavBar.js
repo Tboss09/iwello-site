@@ -1,4 +1,7 @@
 import { ChevronDownIcon, CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
+import { chakra } from '@chakra-ui/react'
+import { useStickyHeader } from 'react-use-sticky-header'
+
 import {
  Box,
  Button,
@@ -6,94 +9,123 @@ import {
  Flex,
  Icon,
  IconButton,
+ Image,
  Link,
  Popover,
  PopoverTrigger,
  Stack,
  Text,
- useColorModeValue,
  useDisclosure,
 } from '@chakra-ui/react'
 import React from 'react'
+import Logo from '../../assets/images/newSite/logo.png'
 
 export default function WithSubnavigation() {
  const { isOpen, onToggle } = useDisclosure()
 
+ /*  Sticky Header*/
+
+ const [setHeaderRef] = useStickyHeader(700, {
+ 
+  headerDetached: 'animate__fadeInDown',
+  headerSticky: 'sticky',
+  headerUnsticky: 'animate__fadeOutUp',
+ })
+ /*  Sticky Header*/
  return (
-  <Box as ="nav">
-   <Flex
-    as="div"
-    bg={useColorModeValue('white', 'gray.800')}
-    color={useColorModeValue('gray.600', 'white')}
-    zIndex="overlay"
-    minH={'20'}
-    py={{ base: 4 }}
-    w="90%"
-    mx="auto"
-    borderBottom={1}
-    borderStyle={'solid'}
-    borderColor={useColorModeValue('gray.200', 'gray.900')}
-    align={'center'}
+  <>
+   <Box
+    as="nav"  
+    bg="#DFDBE5"  
+    
+  
+    transition="all .10s ease-in"
+    
    >
-    {/* Mobile Nav */}
     <Flex
-     flex={{ base: 1, md: 'auto' }}
-     ml={{ base: -2 }}
-     display={{ base: 'flex', md: 'none' }}
+     as="div"
+     className="animate__animated animate__faster"
+     ref={setHeaderRef}
+     bg="white"
+     color="gray.600"
+     zIndex="overlay"
+     minH={'20'}
+     py={{ base: 4 }}
+     w="100%"
+     px="3%"
+     mx="auto"
+     borderBottom={1}
+     borderStyle={'solid'}
+     borderColor="gray.200"
+     align={'center'}
     >
-     <IconButton
-      onClick={onToggle}
-      icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
-      variant={'ghost'}
-      aria-label={'Toggle Navigation'}
-     />
-    </Flex>
-
-    {/* Logo */}
-    <Box flex={['1', null, '0']}>Logo</Box>
-    {/* Logo */}
-
-    <Flex
-     display={['none', null, 'flex']}
-     flex={{ base: 1 }}
-     justify={{ base: 'center', md: 'center' }}
-    >
-     <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
-      <DesktopNav />
-     </Flex>
-    </Flex>
-
-    <Stack
-     flex={{ base: 1, md: 0 }}
-     justify={'flex-end'}
-     direction={'row'}
-     spacing={6}
-    >
-     <Button
-      rounded={'md'}
-      textTransform="uppercase"
-      size="lg"
-      shadow="none"
-      bg="brand.10"
-      color={'white'}
-      transition="ease-out background 0.2s"
-      _active={{
-       bg: 'brand.50',
-      }}
-      _hover={{
-       bg: 'brand.',
-       shadow: 'xl',
-      }}
+     {/* Mobile Nav */}
+     <Flex
+      flex={{ base: 1, md: 1, lg: 'auto' }}
+      ml={{ base: -2 }}
+      display={{ base: 'flex', md: 'flex', lg: 'none' }}
      >
-      Sign up
-     </Button>
-    </Stack>
-   </Flex>
+      <IconButton
+       onClick={onToggle}
+       icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={7} h={7} />}
+       variant={'ghost'}
+       aria-label={'Toggle Navigation'}
+      />
+     </Flex>
 
-   <Collapse in={isOpen} animateOpacity>
-    <MobileNav />
-   </Collapse>
-  </Box>
+     {/* Logo */}
+     <chakra.a flex={['2', null, '1']} w="full" href="/">
+      <Image
+       src={Logo}
+       w={['36', null, '44', '36']}
+       pr={['1', '0', '4', '0']}
+      />
+     </chakra.a>
+     {/* Logo */}
+
+     <Flex
+      display={['none', null, 'none', 'flex']}
+      flex={{ base: 1 ,lg:'3'}}
+      justify={{ base: 'center', md: 'center' }}
+     >
+      <Flex display={{ base: 'none', md: 'none', lg: 'flex' }}>
+       <DesktopNav />
+      </Flex>
+     </Flex>
+
+     <Stack
+      flex={{ base: 1, md: 0 }}
+      justify={'flex-end'}
+      direction={'row'}
+      spacing={6}
+     >
+      <Button
+       rounded={'md'}
+       textTransform="uppercase"
+       size="md"
+       shadow="none"
+       bg="brand.10"
+       color={'white'}
+       fontSize = "sm"
+       transition="ease-out background 0.2s"
+       _active={{
+        bg: 'brand.50',
+       }}
+       _hover={{
+        bg: 'brand.',
+        shadow: 'xl',
+       }}
+      >
+       Sign up
+      </Button>
+     </Stack>
+    </Flex>
+
+    <Collapse in={isOpen} animateOpacity>
+     <MobileNav />
+    </Collapse>
+   </Box>
+  </>
  )
 }
 
@@ -131,11 +163,7 @@ const DesktopNav = () => {
 
 const MobileNav = () => {
  return (
-  <Stack
-   bg={useColorModeValue('white', 'gray.800')}
-   p={4}
-   display={{ md: 'none' }}
-  >
+  <Stack bg="white" p={4} display={{ lg: 'none' }}>
    {NAV_ITEMS.map(navItem => (
     <MobileNavItem key={navItem.label} {...navItem} />
    ))}
@@ -149,7 +177,7 @@ const MobileNavItem = ({ label, children, href }) => {
  return (
   <Stack spacing={4} onClick={children && onToggle}>
    <Flex
-    py={2}
+    p={2}
     as={Link}
     href={href ?? '#'}
     justify={'space-between'}
@@ -158,7 +186,7 @@ const MobileNavItem = ({ label, children, href }) => {
      textDecoration: 'none',
     }}
    >
-    <Text fontWeight={600} color={useColorModeValue('gray.600', 'gray.200')}>
+    <Text fontWeight={600} color="gray.700">
      {label}
     </Text>
     {children && (
@@ -178,7 +206,7 @@ const MobileNavItem = ({ label, children, href }) => {
      pl={4}
      borderLeft={1}
      borderStyle={'solid'}
-     borderColor={useColorModeValue('gray.200', 'gray.700')}
+     borderColor={'gray.200'}
      align={'start'}
     >
      {children &&

@@ -8,7 +8,7 @@ export default function SplitScreen() {
    id="home"
    className="hero-section"
    minH={'100vh'}
-   direction={{ base: 'column', md: 'row' }}
+   direction={{ base: 'column', lg: 'row' }}
   >
    <Flex p={8} flex={1} align={'center'} justify={'center'}>
     <Stack spacing={6} w={'full'} maxW={'lg'}>
@@ -72,7 +72,7 @@ export default function SplitScreen() {
      </Stack>
     </Stack>
    </Flex>
-   <Flex flex={1}>
+   <Flex flex={1} justifyContent="center">
     <Image
      alt={'Login Image'}
      objectFit={['contain', null, 'cover', 'contain']}

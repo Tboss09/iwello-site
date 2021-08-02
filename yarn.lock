@@ -3025,6 +3025,11 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
+animate.css@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-4.1.1.tgz#614ec5a81131d7e4dc362a58143f7406abd68075"
+  integrity sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==
+
 ansi-colors@^3.0.0:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
@@ -9828,6 +9833,13 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
+react-bottom-scroll-listener@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/react-bottom-scroll-listener/-/react-bottom-scroll-listener-5.0.0.tgz#173ab652d2285ea8831a9b79f58d6fc70cf353d0"
+  integrity sha512-X+PE8qiTOd8H9WxrvBKG5AZFUtekWk2mR8YNXhF0Zd8HbpX8eNjPcKm4Y8EEdxmgOe6rP02r/glPI72tWNqtpw==
+  dependencies:
+    lodash.debounce "^4.0.8"
+
 react-clientside-effect@^1.2.2:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/react-clientside-effect/-/react-clientside-effect-1.2.5.tgz#e2c4dc3c9ee109f642fac4f5b6e9bf5bcd2219a3"
@@ -10064,6 +10076,11 @@ react-style-singleton@^2.1.0:
     get-nonce "^1.0.0"
     invariant "^2.2.4"
     tslib "^1.0.0"
+
+react-use-sticky-header@^1.0.18:
+  version "1.0.18"
+  resolved "https://registry.yarnpkg.com/react-use-sticky-header/-/react-use-sticky-header-1.0.18.tgz#433a6a2ddb65eb96560e56933d032a363d09adee"
+  integrity sha512-QbwEa/IIbqI4rtVMMMf7xQadXd9cx5tK7mh1OOHlxYgkXPE/YkzbqTQQs+3fNjfo5dw6gMvUnLpGoTzz8j6NFQ==
 
 react@^17.0.2:
   version "17.0.2"

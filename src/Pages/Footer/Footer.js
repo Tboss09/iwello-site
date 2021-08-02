@@ -74,7 +74,7 @@ export default function SmallWithLogoLeft() {
     <Stack
      direction={['column', null, 'row', 'row']}
      alignItems={'center'}
-     spacing={[4, null, 20]}
+     spacing={[4, null, 2, 20]}
      color="brand.10"
      fontWeight="700"
      justify={['center', 'center', 'center']}
@@ -93,7 +93,12 @@ export default function SmallWithLogoLeft() {
     </Stack>
    </Box>
 
-   <VStack align={['center', 'center', 'flex-end']} w="100%" h="max-content">
+   <VStack
+    spacing={2}
+    align={['center', 'center', 'flex-end']}
+    w="100%"
+    h="max-content"
+   >
     <HStack spacing={8} pb={4}>
      <SocialButton label="Whatsapp" href="https://wa.link/ls52nw">
       <FaWhatsapp />
@@ -111,11 +116,12 @@ export default function SmallWithLogoLeft() {
       <FaTwitter />
      </SocialButton>
     </HStack>
-
-    <Text>We would love to hear from you </Text>
-    <Link fontWeight="bold" color="brand.10">
-     @info@gmail.com
-    </Link>
+    <Box>
+     <Text fontSize="sm">We would love to hear from you </Text>
+     <Link fontSize="sm" fontWeight="bold" color="brand.10">
+      info@gmail.com
+     </Link>
+    </Box>
    </VStack>
   </SimpleGrid>
  )

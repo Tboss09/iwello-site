@@ -10,22 +10,14 @@ body {
 .rotateQuote {
  transform: rotate(180deg);
 }
-
-.stickyHeader {
- position: fixed;
- top: 0px;
- left: 0px;
- right: 0px;
- max-width: 100vw;
- z-index: 10;
- transform: translateX(0%), translateY(100%);
+.headerAttached{
+    display: none !important;
 }
-.hideStickyheader {
+
+.animate__fadeInDown ,.sticky{
+ z-index: 40;
  position: fixed;
- top: 0px;
- left: 0px;
+ display: block;
  right: 0px;
- max-width: 100vw;
- z-index: 10;
- transform: translateX(0%), translateY(100%);
+ left: 0px;
 }
