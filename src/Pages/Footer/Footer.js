@@ -118,8 +118,8 @@ export default function SmallWithLogoLeft() {
     </HStack>
     <Box>
      <Text fontSize="sm">We would love to hear from you </Text>
-     <Link fontSize="sm" fontWeight="bold" color="brand.10">
-      info@gmail.com
+     <Link href="mailto:infor@iwello.org" fontSize="sm" fontWeight="bold" color="brand.10">
+      infor@iwello.org
      </Link>
     </Box>
    </VStack>

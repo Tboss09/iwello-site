@@ -90,7 +90,7 @@ export default function GridBlurredBackdrop() {
     <chakra.h3
      letterSpacing="1px"
      textTransform={'uppercase'}
-     color={'brand.10'}
+     color={'#6128BD'}
      fontWeight="bold"
      fontSize="xl"
     >

@@ -26,7 +26,6 @@ export default function WithSubnavigation() {
  /*  Sticky Header*/
 
  const [setHeaderRef] = useStickyHeader(700, {
- 
   headerDetached: 'animate__fadeInDown',
   headerSticky: 'sticky',
   headerUnsticky: 'animate__fadeOutUp',
@@ -34,14 +33,7 @@ export default function WithSubnavigation() {
  /*  Sticky Header*/
  return (
   <>
-   <Box
-    as="nav"  
-    bg="#DFDBE5"  
-    
-  
-    transition="all .10s ease-in"
-    
-   >
+   <Box as="nav" bg="#DFDBE5" transition="all .10s ease-in">
     <Flex
      as="div"
      className="animate__animated animate__faster"
@@ -85,7 +77,7 @@ export default function WithSubnavigation() {
 
      <Flex
       display={['none', null, 'none', 'flex']}
-      flex={{ base: 1 ,lg:'3'}}
+      flex={{ base: 1, lg: '3' }}
       justify={{ base: 'center', md: 'center' }}
      >
       <Flex display={{ base: 'none', md: 'none', lg: 'flex' }}>
@@ -106,15 +98,17 @@ export default function WithSubnavigation() {
        shadow="none"
        bg="brand.10"
        color={'white'}
-       fontSize = "sm"
+       fontSize="sm"
        transition="ease-out background 0.2s"
        _active={{
         bg: 'brand.50',
        }}
        _hover={{
-        bg: 'brand.',
+        bg: 'brand.90',
         shadow: 'xl',
        }}
+       w={{ base: '24', md: '36' }}
+       h="12"
       >
        Sign up
       </Button>
@@ -130,7 +124,7 @@ export default function WithSubnavigation() {
 }
 
 const DesktopNav = () => {
- const linkColor = 'brand.100'
+ const linkColor = '#1A1A1A'
  const linkHoverColor = 'brand.10'
 
  return (

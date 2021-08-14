@@ -1,4 +1,12 @@
-import { Button, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
+import {
+ Button,
+ Flex,
+ Heading,
+ Image,
+ Link,
+ Stack,
+ Text,
+} from '@chakra-ui/react'
 import React from 'react'
 import FemaleDoc from '../../assets/images/doctors/african-doc.png'
 
@@ -19,7 +27,7 @@ export default function SplitScreen() {
       <Text as={'span'} position={'relative'} color="brand.100">
        Talk to a doctor today for less than
       </Text>
-      <Text color={'brand.10'} as={'span'} pl="4">
+      <Text color={'#2521C4'} as={'span'} pl="4">
        one dollar
       </Text>{' '}
      </Heading>
@@ -43,6 +51,8 @@ export default function SplitScreen() {
        shadow="none"
        w={'3xs'}
        h={'14'}
+       as={Link}
+       href="https://iwello.org/signup"
        bg="brand.10"
        color={'white'}
        transition="ease-out background 0.2s"
@@ -60,9 +70,11 @@ export default function SplitScreen() {
       <Button
        w={'3xs'}
        rounded={'md'}
-       bg="transparent"
+       bg="#DBCEF0"
        border="1px solid #823DF1"
-       color="brand.100"
+       color="#42278F"
+       as={Link}
+       href="https://iwello.org/signin"
        h={'14'}
        size="lg"
        textTransform="uppercase"

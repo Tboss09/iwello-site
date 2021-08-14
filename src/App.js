@@ -6,7 +6,6 @@ import {
  Footer,
  Home,
  NavBar,
- 
  Testimonial,
 } from './pages/index'
 const App = () => {
