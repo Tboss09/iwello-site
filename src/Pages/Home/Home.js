@@ -37,7 +37,6 @@ export default function SplitScreen() {
       fast as lighting for less than a dollar! No more high medical bills and
       travelling distances to get the perfect service.
      </Text>
-
      <Stack
       direction={{ base: 'column', md: 'row' }}
       spacing={12}
